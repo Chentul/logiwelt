@@ -1,0 +1,108 @@
+.newsletter {
+	
+	background: url("../../img/background-newsletter.jpg") center fixed;
+	background-size: 100%;
+	height: 400px;
+
+	h2 {
+		margin-top: 100px;
+		text-align: center;
+		color: #fff;
+		text-transform: uppercase;
+		font-size: 28px;
+		font-family: "Lato Bold", sans-serif;
+		letter-spacing: 1px;
+	}
+
+	p {
+		color: #fff;
+		text-align: center;
+		font-size: 18px;
+		margin-bottom: 30px;
+		font-family: "Lato Regular", sans-serif;
+	}
+
+	form {
+		width: 70%;
+		margin: auto;
+
+		#mail {
+			width: 90%;
+			float: left;
+			border: 1px solid #fff;
+			background: rgba(156, 154, 154, 0.52);
+			color: #fff;
+			font-family: "Lato Regular", sans-serif;
+			
+			&::-webkit-input-placeholder, 
+			&::-moz-placeholder,
+			&:-ms-input-placeholder,
+			&:-moz-placeholder,
+			&::placeholder {
+				color: red !important;
+			}
+
+			&:focus {
+				background: rgba(156, 154, 154, 0.52);
+				outline: none !important;
+
+			}
+
+		}
+
+
+		button {
+			display: inline-block;
+			float: left;
+			background: #0d7ae3;
+			display: inline-block;
+			width: 50px;
+			padding: 5.5px 0px;
+			cursor: pointer;
+			border: 1px solid #fff;
+			border-left: 0px solid transparent;
+
+			i {
+				color: #fff;
+				font-size: 26px;
+			}
+
+		}
+
+	}
+
+}
+
+@media ( max-width: 750px ) {
+	.newsletter {
+		form {
+			width: 100%;
+			input {
+				width: 50%;
+			}
+		}
+	}
+} 
+
+@media ( max-width: 639px ) {
+	.newsletter {
+		form {
+			width: 100%;
+			text-align: center;
+			overflow: hidden;
+			#mail {
+				margin: auto;
+				width: 60%;
+				float: initial;
+				display: inline-block;
+			}
+			button {
+				float: initial;
+				display: initial;
+				position: relative;
+				left: -4px;
+				top: 2px;
+			}
+		}
+	}
+} 

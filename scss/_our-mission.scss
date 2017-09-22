@@ -1,0 +1,186 @@
+.our-mission {
+	background: url("../../img/background-mision.jpg") no-repeat center;
+	height: 700px;
+	position: relative;
+	overflow: hidden;
+
+	.sqrt {
+		position: absolute;
+		z-index: 1;
+	}
+	.tr-1 {
+		left: 65px;
+		top: 40px;
+	}
+	.tr-2 {
+		right: 0px;
+		bottom: -50px;
+	}
+	.tr-3 {
+		bottom: -50px;
+		left: 360px;
+	}
+	.tr-4 {
+		left: 0px;
+		bottom: 100px;
+	}
+
+	.computer {
+		margin-top: 260px;
+		position: relative;
+		z-index: 2;
+		margin-left: 25px;
+	}
+
+	.icons {
+		margin: 250px 0px 0px 50px;
+		padding: 0px;
+		text-align: left;
+		position: relative;
+		z-index: 2;
+
+		li {
+			list-style: none;
+			display: inline-block;
+			margin: 0px 100px 0px 0px;
+			&:last-child {
+				margin-right: 0px;
+			}
+			&:nth-child(2) {
+				.border {
+					padding-right: 10px;
+				}
+			}
+
+			.border {
+				border: 3px solid #fff;
+				border-radius: 12.5px;
+				padding: 7.5px;
+				&:hover {
+					cursor: pointer;
+					transition: background .4s;
+				}
+
+
+				div {
+					width: 60px;
+					height: 60px;
+				}
+
+				.us {
+					background: url("../../img/nosotros-icon.png") no-repeat center;
+				}
+
+				.mission {
+					background: url("../../img/mision-icon.png") no-repeat center;
+				}
+
+				.view {
+					background: url("../../img/vision-icon.png") no-repeat center;
+				}
+
+			}
+
+			.activo {
+				background: #fff;
+				
+				.us {
+					background: url("../../img/nosotros-icon-hover.png") no-repeat center;
+				}
+
+				.mission {
+					background: url("../../img/mision-icon-hover.png") no-repeat center;
+				}
+
+				.view {
+					background: url("../../img/vision-icon-hover.png") no-repeat center;
+				}
+			}
+
+			.selected {
+				@extend .activo;
+			}
+
+			p {
+				margin: 5px 0px 0px 0px;
+				padding: 0px;
+				color: #fff;
+				font-size: 13px;
+				text-align: center;
+				font-family: "Lato Semibold", sans-serif;
+			}
+
+		}
+
+	}
+
+	.om-description { 
+		margin-top: 40px;
+		margin-left: 50px;
+		position: relative;
+		z-index: 2;
+
+		.cube{ 
+			display: inline-block;
+			margin-right: 10px;
+		}
+		h2 { 
+			display: inline-block;
+			font-size: 22px;
+			color: #fff;
+			position: relative;
+			top: 2.5px;
+			font-family: "Lato Bold", sans-serif;
+		}
+
+		p {
+			color: #fff;
+			width: 90%;
+			margin-top: 20px;
+			font-family: "Lato Regular", sans-serif;
+			strong {
+				font-family: "Lato Bold", sans-serif;
+			}
+		}
+
+	}
+
+}
+
+@media ( max-width: 1070px ) {
+	.our-mission {
+		.icons {
+			li {
+				margin-right: 80px;
+			}
+		}
+	}
+}
+
+@media ( max-width: 1024px ) { 
+	.our-mission { 
+		.computer {
+			margin: 40px auto 0px auto !important;
+			display: inline-block;
+		}
+		.icons {
+			margin-top: 40px;
+			text-align: center;
+		}
+		.om-description {
+			margin-top: 30px;
+		}
+	}
+}
+
+@media ( max-width: 499px ) { 
+	.our-mission {
+		.tr-5 { display: none; }
+		.icons {
+			margin-left: 10px;
+			li {
+				margin-right: 15px;
+			}
+		}
+	}
+}

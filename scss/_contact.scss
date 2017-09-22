@@ -1,0 +1,161 @@
+.contacto {
+	background: url("../../img/contacto.png") no-repeat;	
+	background-position: 128% center;
+	form {
+		margin-top: 70px;
+		width: 90%;
+		margin-left: 10%;
+
+		.form-group {
+			overflow: hidden;
+			margin: 10px 0px;
+
+			&:nth-child(4) {
+				margin-bottom: 2.5px;
+			}
+
+			&:last-child {
+				margin-top: 0px;
+			}
+
+			input {
+				padding: 0px 10px;
+				margin: 0px;
+				border: 1px solid silver;
+				font-size: 14px;
+				font-family: "Lato Regular", sans-serif;
+
+				&::placeholder {
+					color: #000 !important;
+				}
+			}
+
+			textarea{
+				resize: none;
+				height: 120px;
+				
+				&::placeholder {
+					color: #000 !important;
+					font-family: "Lato Regular", sans-serif;
+				}
+			}
+
+			input[type="submit"] {
+				width: 100%;
+				height: 40px;
+				text-align: center;
+				text-transform: uppercase;
+				background: #0d7ae3;
+				color: #fff;
+				border: 0px solid transparent;
+				font-size: 16px;
+				cursor: pointer;
+				font-family: "Lato Heavy", sans-serif;
+			}
+
+		}
+
+	}
+
+
+	h2 {
+		margin-top: 60px;
+		font-size: 22px;
+		font-weight: 777;
+		text-transform: uppercase;
+		position: relative;
+		margin-bottom: 25px;
+		font-family: "Lato Heavy", sans-serif;
+		padding-bottom: 2px;
+
+		&::before {
+			content: "";
+			width: 8%;
+			height: 4px;
+			background: #0d7ae3;
+			left: 0px;
+			bottom: 0px;
+			position: absolute;
+		}
+
+	}
+
+	p {
+		margin-bottom: 70px;
+		font-size: 14px;
+		font-family: "Lato Regular", sans-serif;
+	}
+
+	ul {
+		margin: 0px 0px 0px 0px;
+		padding: 0px;
+
+		li {
+			list-style: none;
+			margin: 15px 0px;
+			overflow: hidden;
+			font-family: "Lato Regular", sans-serif;
+
+			i {
+				display: inline-block;
+				float: left;
+				width: 10%;
+				font-size: 35px;
+				overflow: hidden;
+				text-align: center;
+				color: #0d7ae3;
+				margin-right: 10px;
+			}
+
+			span {
+				display: inline-block;
+				float: left;
+				width: 80%;
+				font-size: 14px;
+				position: relative;
+			}
+
+
+			&:nth-child(1) {
+				span {
+					top: 2.5px;
+				}
+			}
+			&:nth-child(2) {
+				span {
+					top: 5px;
+				}
+			}
+			&:nth-child(3) {
+				span {
+					top: -5px;
+				}
+			}
+		}
+
+	}
+
+}
+
+@media ( max-width: 734px ) {
+	.contacto {
+		background: #fff;
+	}
+}
+
+@media ( max-width: 639px ) {
+	.contacto {
+		/*background: url("../../img/contacto.png") no-repeat;	
+		background-position: center bottom;*/
+		form {
+			width: 100%;
+			margin: 0px;
+		}
+		h2 {
+			margin-top: 15px;
+		}
+		p {
+			margin-bottom: 25px;
+		}
+	}
+}

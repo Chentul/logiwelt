@@ -1,0 +1,39 @@
+.info-header {
+	text-align: center;
+	background: #182652;
+	overflow: hidden;
+	padding: 20px 0px;
+
+	.ihright { text-align: right; }
+	.ihleft { text-align: left; }
+
+	i {
+		font-size: 44px;
+		color: #fff;
+		margin-right: 5px;
+	}
+
+	.info {
+		display: inline-block;
+		width: 220px;
+		text-align: left;
+		h4, p { 
+			color: #fff;
+			margin: 0px;
+			font-family: "Lato Semibold";
+		}
+		h4 {
+			font-size: 16px;
+			text-transform: uppercase;
+		}
+		p {
+			font-size: 12px;
+		}
+	}
+
+}
+
+@media ( max-width: 1024px ) {
+	.ihright, .ihleft { text-align: center !important; }
+	.info { margin-bottom: 20px; }
+}
